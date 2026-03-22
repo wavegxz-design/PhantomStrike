@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff2d2d&height=200&section=header&text=PhantomStrike&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Red+Team+Recon+%26+Pentest+Framework&descAlignY=60&descSize=18&descColor=ffffff" width="100%"/>
+<img src="banner.svg" alt="PhantomStrike" width="100%"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=FF2D2D&center=true&vCenter=true&width=700&lines=Nmap+%7C+Shodan+%7C+Metasploit+%7C+SSH+BruteForce;DNS+Recon+%7C+FTP+%7C+CVE+%2F+EDB+%2F+MSF+VulnDB;Red+Team+%7C+Pentest+%7C+Bug+Bounty;Authorized+Use+Only+%E2%80%94+Stay+Legal" alt="Typing SVG"/>
@@ -216,6 +216,6 @@ The author assumes NO responsibility for misuse.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff2d2d&height=120&section=footer&fontColor=ffffff&animation=fadeIn&text=krypthane+%C2%B7+wavegxz-design+%C2%B7+Ethical+Hacking+Only" width="100%"/>
+<img src="banner.svg" alt="PhantomStrike footer" width="100%" style="transform:scaleY(-1);opacity:0.5"/>
 
 </div>
