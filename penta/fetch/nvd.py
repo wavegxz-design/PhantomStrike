@@ -60,7 +60,7 @@ class NvdCveCollector(object):
         logging.info("Fetching {}".format(url))
 
         with tempfile.NamedTemporaryFile() as tf:
-            r = requests.get(url, stream=True)
+            r = requests.get(url, stream=True, timeout=120)  # FIX: timeout — NVD feeds can be large
             for chunk in r.iter_content(chunk_size=config.CHUNK_SIZE):
                 tf.write(chunk)
             tf.flush()
