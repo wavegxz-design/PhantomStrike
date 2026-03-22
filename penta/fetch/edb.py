@@ -268,7 +268,7 @@ class EdbCsvCollector(object):
                 logging.info("Inserting {} Exploits of unknown".format(len(target_url_list)))
                 self.convert_online(target_url_list, target_edb_list)
         else:
-            logging.warn("Notthing to update")
+            logging.warning("Nothing to update")  # FIX [BUG-04]: logging.warn() deprecated Python 3.2+, typo fixed
 
     # Check for the existence of EDB records, determine the existence of CVEs, and store them in a categorized list
     def categorize(self, check_list):
@@ -463,9 +463,9 @@ class EdbCsvCollector(object):
                 return url, item, await response.text()
 
         except asyncio.TimeoutError:
-            logging.warn("Timeout exceded: {}".format(url))
+            logging.warning("Timeout exceeded: {}".format(url))  # FIX [BUG-04]: warn()→warning(), typo fixed
         except asyncio.CancelledError:
-            logging.warn("Task cancelled: {}".format(url))
+            logging.warning("Task cancelled: {}".format(url))  # FIX [BUG-04]: warn()→warning()
             await session.close()
         except aiohttp.ClientError or ClientConnectionError or ServerDisconnectedError or ClientOSError:
             logging.error("No internet connection")
