@@ -278,7 +278,7 @@ class EdbCsvCollector(object):
         target_edb_list = []
         try:
             raw_map_url = EDB_MAP_URL
-            raw_map = requests.get(raw_map_url, headers=self.headers)
+            raw_map = requests.get(raw_map_url, headers=self.headers, timeout=30)  # FIX: timeout added
             edb_cve_map = ujson.loads(raw_map.text)
         except Exception:
             edb_cve_map = self.recover_map_from_db()
